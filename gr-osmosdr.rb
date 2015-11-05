@@ -10,6 +10,7 @@ class GrOsmosdr < Formula
   depends_on :python
   build.without? "python-deps"
   depends_on "Cheetah" => :python
+  depends_on "gnuradio"
 
   def install
     mkdir "build" do
