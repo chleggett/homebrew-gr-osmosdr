@@ -6,6 +6,7 @@ class GrOsmosdr < Formula
   sha1 "672041a6ffa767d39ffad2432e2a13c11e3ec984"
 
   depends_on "cmake" => :build
+  depends_on "swig" => :build
   depends_on :python
   build.without? "python-deps"
   depends_on "Cheetah" => :python
