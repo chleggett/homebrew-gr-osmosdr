@@ -18,6 +18,10 @@ class GrOsmosdr < Formula
     end
   end
 
+  def which_python
+    "python" + `python -c 'import sys;print(sys.version[:3])'`.strip
+  end
+
   test do
     system "false"
   end
