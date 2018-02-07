@@ -6,9 +6,8 @@ class GrOsmosdr < Formula
   sha256 "59bb389431f72545f3ac51b87ceb98f3ba0591a1941f456ac4e67efb2ddb648c"
 
   depends_on "cmake" => :build
-  depends_on :python
+  depends_on "python"
   build.without? "python-deps"
-  depends_on "Cheetah" => :python
   depends_on "gnuradio"
 
   def install
